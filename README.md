@@ -98,7 +98,7 @@ limitations under the License.
 ## Contact
 
 For questions or inquiries about the event, please contact:
-- General inquiries: info@rvgef.org
-- Speaker submissions: speakers@rvgef.org
-- Sponsorship opportunities: sponsors@rvgef.org
+- General inquiries: w@rv2036.org
+- Speaker submissions: w@rv2036.org
+- Sponsorship opportunities: w@rv2036.org
 
