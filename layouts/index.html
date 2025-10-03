@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Site.Title }}</title>
+    <meta name="description" content="{{ .Site.Params.description }}">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-riscv-blue sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">RISC-V Global Ecosystem Forum</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#speakers">Call for Speakers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sponsors">Sponsors</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#agenda">Agenda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#organizers">Organizers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#venue">Venue</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#travel">Travel</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-8 mx-auto text-center text-white">
+                    <h1 class="display-3 fw-bold mb-4">RISC-V Global Ecosystem Forum</h1>
+                    <p class="lead mb-4">Hong Kong | Building the Future of Open Hardware</p>
+                    <p class="fs-5 mb-5">Join us for an exciting gathering of RISC-V enthusiasts, developers, and industry leaders as we shape the future of open-source hardware architecture.</p>
+                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                        <a href="#speakers" class="btn btn-riscv-yellow btn-lg px-4 gap-3">Submit Your Talk</a>
+                        <a href="#sponsors" class="btn btn-outline-light btn-lg px-4">Become a Sponsor</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="display-5 fw-bold mb-4 text-center">About the Forum</h2>
+                    <p class="lead text-center mb-5">The RISC-V Global Ecosystem Forum brings together innovators, developers, and industry leaders to explore the latest developments in RISC-V architecture.</p>
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="text-center">
+                                <div class="feature-icon bg-riscv-blue text-white rounded-circle mb-3 mx-auto d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" viewBox="0 0 16 16">
+                                        <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
+                                        <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319z"/>
+                                    </svg>
+                                </div>
+                                <h5>Technical Excellence</h5>
+                                <p>Cutting-edge presentations on RISC-V implementations and innovations</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="text-center">
+                                <div class="feature-icon bg-riscv-yellow text-dark rounded-circle mb-3 mx-auto d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" viewBox="0 0 16 16">
+                                        <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z"/>
+                                    </svg>
+                                </div>
+                                <h5>Networking</h5>
+                                <p>Connect with global RISC-V community members and industry experts</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="text-center">
+                                <div class="feature-icon bg-riscv-blue text-white rounded-circle mb-3 mx-auto d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" viewBox="0 0 16 16">
+                                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+                                    </svg>
+                                </div>
+                                <h5>Knowledge Sharing</h5>
+                                <p>Learn from real-world implementations and best practices</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call for Speakers Section -->
+    <section id="speakers" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="display-5 fw-bold mb-4 text-center">Call for Speakers</h2>
+                    <p class="lead text-center mb-5">We're looking for passionate speakers to share their RISC-V experiences and insights.</p>
+                    
+                    <div class="card shadow-sm mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Topics of Interest</h5>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">✓ RISC-V processor design and implementation</li>
+                                <li class="mb-2">✓ Software development and toolchains</li>
+                                <li class="mb-2">✓ Operating systems and firmware</li>
+                                <li class="mb-2">✓ Industrial applications and case studies</li>
+                                <li class="mb-2">✓ Security and verification</li>
+                                <li class="mb-2">✓ AI/ML acceleration with RISC-V</li>
+                                <li class="mb-2">✓ IoT and embedded systems</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card shadow-sm mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Submission Guidelines</h5>
+                            <ul>
+                                <li>Presentations should be 20-30 minutes long</li>
+                                <li>Include a brief biography and speaker photo</li>
+                                <li>Provide an abstract (200-300 words)</li>
+                                <li>Submission deadline: TBA</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <a href="mailto:speakers@rvgef.org" class="btn btn-riscv-blue btn-lg">Submit Your Proposal</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call for Sponsors Section -->
+    <section id="sponsors" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <h2 class="display-5 fw-bold mb-4 text-center">Become a Sponsor</h2>
+                    <p class="lead text-center mb-5">Support the RISC-V ecosystem and gain visibility among leading industry professionals.</p>
+                    
+                    <div class="row g-4 mb-5">
+                        <div class="col-md-4">
+                            <div class="card h-100 shadow border-warning">
+                                <div class="card-header bg-riscv-yellow text-center">
+                                    <h4 class="my-2">Gold Sponsor</h4>
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="text-center mb-4">$10,000</h3>
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2">✓ Logo on website and materials</li>
+                                        <li class="mb-2">✓ Exhibition booth (premium location)</li>
+                                        <li class="mb-2">✓ Speaking slot (30 minutes)</li>
+                                        <li class="mb-2">✓ 5 conference passes</li>
+                                        <li class="mb-2">✓ Social media promotion</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card h-100 shadow">
+                                <div class="card-header bg-secondary text-white text-center">
+                                    <h4 class="my-2">Silver Sponsor</h4>
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="text-center mb-4">$5,000</h3>
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2">✓ Logo on website and materials</li>
+                                        <li class="mb-2">✓ Exhibition booth</li>
+                                        <li class="mb-2">✓ Lightning talk (10 minutes)</li>
+                                        <li class="mb-2">✓ 3 conference passes</li>
+                                        <li class="mb-2">✓ Social media mention</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card h-100 shadow">
+                                <div class="card-header bg-dark text-white text-center">
+                                    <h4 class="my-2">Bronze Sponsor</h4>
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="text-center mb-4">$2,500</h3>
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2">✓ Logo on website</li>
+                                        <li class="mb-2">✓ Promotional materials at venue</li>
+                                        <li class="mb-2">✓ 2 conference passes</li>
+                                        <li class="mb-2">✓ Social media mention</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <p class="mb-4">Interested in sponsoring? Contact us to discuss custom packages.</p>
+                        <a href="mailto:sponsors@rvgef.org" class="btn btn-riscv-blue btn-lg">Contact Sponsorship Team</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Venue & Agenda Section -->
+    <section id="agenda" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <h2 class="display-5 fw-bold mb-4 text-center">Venue & Agenda</h2>
+                    
+                    <div class="row g-4">
+                        <div class="col-lg-6">
+                            <div class="card shadow-sm h-100">
+                                <div class="card-body">
+                                    <h4 class="card-title mb-4">Event Details</h4>
+                                    <p><strong>Date:</strong> TBA</p>
+                                    <p><strong>Location:</strong> Hong Kong Convention and Exhibition Centre</p>
+                                    <p><strong>Address:</strong> 1 Expo Drive, Wan Chai, Hong Kong</p>
+                                    <p class="mb-4">The venue is easily accessible via MTR and offers state-of-the-art facilities for our conference.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="card shadow-sm h-100">
+                                <div class="card-body">
+                                    <h4 class="card-title mb-4">Tentative Agenda</h4>
+                                    <table class="table table-sm">
+                                        <tbody>
+                                            <tr><td><strong>09:00 - 09:30</strong></td><td>Registration & Welcome</td></tr>
+                                            <tr><td><strong>09:30 - 10:30</strong></td><td>Keynote Presentations</td></tr>
+                                            <tr><td><strong>10:30 - 12:00</strong></td><td>Technical Sessions</td></tr>
+                                            <tr><td><strong>12:00 - 13:30</strong></td><td>Lunch & Networking</td></tr>
+                                            <tr><td><strong>13:30 - 15:00</strong></td><td>Technical Sessions</td></tr>
+                                            <tr><td><strong>15:00 - 15:30</strong></td><td>Coffee Break</td></tr>
+                                            <tr><td><strong>15:30 - 17:00</strong></td><td>Panel Discussions</td></tr>
+                                            <tr><td><strong>17:00 - 18:00</strong></td><td>Networking Reception</td></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Organizers Section -->
+    <section id="organizers" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="display-5 fw-bold mb-4 text-center">Organizers</h2>
+                    <p class="lead text-center mb-5">The RISC-V Global Ecosystem Forum is organized by dedicated members of the RISC-V community.</p>
+                    
+                    <div class="card shadow-sm mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Organizing Committee</h5>
+                            <p>Our organizing committee consists of experienced professionals from various sectors of the RISC-V ecosystem, including hardware vendors, software developers, academic researchers, and industry partners.</p>
+                            <p class="mb-0">For inquiries, please contact us at: <a href="mailto:info@rvgef.org">info@rvgef.org</a></p>
+                        </div>
+                    </div>
+
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Supporting Organizations</h5>
+                            <p class="mb-0">This event is made possible through the support of the global RISC-V community and our partner organizations committed to advancing open-source hardware innovation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Venue Information Section -->
+    <section id="venue" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <h2 class="display-5 fw-bold mb-4 text-center">Venue Information</h2>
+                    
+                    <div class="row g-4">
+                        <div class="col-lg-6">
+                            <div class="card shadow-sm h-100">
+                                <div class="card-body">
+                                    <h4 class="card-title mb-3">Hong Kong Convention and Exhibition Centre</h4>
+                                    <p>The Hong Kong Convention and Exhibition Centre (HKCEC) is one of Asia's premier event venues, featuring:</p>
+                                    <ul>
+                                        <li>World-class conference facilities</li>
+                                        <li>High-speed internet connectivity</li>
+                                        <li>Multiple meeting rooms and breakout spaces</li>
+                                        <li>On-site catering services</li>
+                                        <li>Accessible facilities</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="card shadow-sm h-100">
+                                <div class="card-body">
+                                    <h4 class="card-title mb-3">About Hong Kong</h4>
+                                    <p>Hong Kong is a vibrant international city and major business hub in Asia, known for:</p>
+                                    <ul>
+                                        <li>Strategic location in the Asia-Pacific region</li>
+                                        <li>World-class transportation infrastructure</li>
+                                        <li>Diverse culinary experiences</li>
+                                        <li>Rich cultural heritage</li>
+                                        <li>Excellent conference and business facilities</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transportation Section -->
+    <section id="travel" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <h2 class="display-5 fw-bold mb-4 text-center">Transportation</h2>
+                    
+                    <div class="row g-4 mb-4">
+                        <div class="col-md-6">
+                            <div class="card shadow-sm h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">From Hong Kong International Airport</h5>
+                                    <p><strong>Airport Express + MTR:</strong></p>
+                                    <ul>
+                                        <li>Take Airport Express to Hong Kong Station (24 minutes)</li>
+                                        <li>Transfer to MTR Island Line to Wan Chai Station (5 minutes)</li>
+                                        <li>Walk to HKCEC (5 minutes)</li>
+                                    </ul>
+                                    <p><strong>Taxi:</strong> Approximately 30-40 minutes (HK$300-400)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card shadow-sm h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Getting to the Venue</h5>
+                                    <p><strong>MTR (Metro):</strong></p>
+                                    <ul>
+                                        <li>Wan Chai Station (Island Line) - 5 minutes walk</li>
+                                        <li>Exhibition Centre Station (not yet open)</li>
+                                    </ul>
+                                    <p><strong>Tram:</strong> Alight at Convention Avenue</p>
+                                    <p><strong>Bus:</strong> Multiple routes serve the area</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Local Transportation Tips</h5>
+                            <ul class="mb-0">
+                                <li>Consider getting an Octopus Card for convenient payment on all public transport</li>
+                                <li>Hong Kong's public transportation is efficient, affordable, and English-friendly</li>
+                                <li>Taxis are readily available and reasonably priced</li>
+                                <li>Most areas are pedestrian-friendly with excellent signage</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accommodation Section -->
+    <section id="accommodation" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <h2 class="display-5 fw-bold mb-4 text-center">Accommodation</h2>
+                    <p class="lead text-center mb-5">Hong Kong offers a wide range of accommodation options to suit every budget.</p>
+                    
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="card shadow-sm h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Nearby Hotels</h5>
+                                    <p class="mb-2"><strong>Renaissance Harbour View Hotel</strong></p>
+                                    <p class="small text-muted mb-3">Connected to HKCEC</p>
+                                    
+                                    <p class="mb-2"><strong>Grand Hyatt Hong Kong</strong></p>
+                                    <p class="small text-muted mb-3">Adjacent to HKCEC</p>
+                                    
+                                    <p class="mb-2"><strong>JW Marriott Hotel Hong Kong</strong></p>
+                                    <p class="small text-muted">5 minutes walk</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card shadow-sm h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Budget Options</h5>
+                                    <p class="mb-2"><strong>Causeway Bay Area</strong></p>
+                                    <p class="small text-muted mb-3">10-15 minutes by MTR</p>
+                                    
+                                    <p class="mb-2"><strong>Wan Chai Area</strong></p>
+                                    <p class="small text-muted mb-3">Walking distance</p>
+                                    
+                                    <p class="mb-2"><strong>Central District</strong></p>
+                                    <p class="small text-muted">10 minutes by MTR</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card shadow-sm h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Booking Tips</h5>
+                                    <ul>
+                                        <li>Book early for better rates</li>
+                                        <li>Check for conference discounts (TBA)</li>
+                                        <li>Consider proximity to MTR stations</li>
+                                        <li>Most hotels offer English-speaking staff</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-riscv-blue text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>RISC-V Global Ecosystem Forum</h5>
+                    <p class="mb-2">Hong Kong</p>
+                    <p class="mb-0">
+                        <a href="mailto:info@rvgef.org" class="text-white text-decoration-none">info@rvgef.org</a>
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-2">Follow Us</p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3">Twitter</a>
+                        <a href="#" class="text-white me-3">LinkedIn</a>
+                        <a href="#" class="text-white">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-3 bg-white">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0 small">&copy; 2024 RISC-V Global Ecosystem Forum. Licensed under Apache License 2.0.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Smooth scrolling -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
