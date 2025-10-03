@@ -1,4 +1,4 @@
-baseURL = "https://rv2036.github.io/rvgef-website/"
+baseURL = "https://rvgef.hk"
 languageCode = "en-us"
 title = "RISC-V Global Ecosystem Forum"
 theme = "rvgef"
