@@ -5,19 +5,6 @@ Homepage for RISC-V Global Ecosystem Forum (Hong Kong)
 
 This is the official website for the RISC-V Global Ecosystem Forum, a gathering of RISC-V enthusiasts, developers, and industry leaders in Hong Kong. The website serves as an information hub for attendees, speakers, and sponsors.
 
-## Features
-
-- **Bootstrap-style, Mobile-first Design**: Responsive design that works seamlessly across all devices
-- **RISC-V Theme**: Blue (#283583) and yellow (#f7ce46) color scheme matching the RISC-V logo
-- **Complete Event Information**: 
-  - Event introduction and overview
-  - Call for speakers with submission guidelines
-  - Sponsorship opportunities and packages
-  - Venue and agenda details
-  - Organizer information
-  - Travel and transportation guidance
-  - Accommodation recommendations
-
 ## Technology Stack
 
 - **Static Site Generator**: Hugo
@@ -81,7 +68,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 
-Copyright 2024 RISC-V Global Ecosystem Forum
+Copyright 2025 Wei Wu and github copilot
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
